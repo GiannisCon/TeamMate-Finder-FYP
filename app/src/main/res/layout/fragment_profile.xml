@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ProfileFragment">
+
+
+        <TextView
+            android:id="@+id/ProfileHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120sp"
+            android:layout_marginTop="28sp"
+            android:layout_marginEnd="120sp"
+            android:text="@string/profile"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/FullNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16sp"
+            android:layout_marginTop="40sp"
+            android:drawableLeft="@drawable/usernameicon"
+            android:drawablePadding="5sp"
+            android:drawableTint="@color/black"
+            android:text="@string/full_name"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/usersProfPic" />
+
+        <TextView
+            android:id="@+id/ProfileUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40sp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.571"
+            app:layout_constraintStart_toEndOf="@+id/FullNameTextView"
+            app:layout_constraintTop_toBottomOf="@+id/usersProfPic" />
+
+        <TextView
+            android:id="@+id/EmailTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16sp"
+            android:layout_marginTop="40sp"
+            android:drawablePadding="5sp"
+            android:drawableTint="@color/black"
+            android:text="@string/email_address"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:drawableLeftCompat="@drawable/emailicon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/discordTextView" />
+
+        <TextView
+            android:id="@+id/ProfileEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45sp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.522"
+            app:layout_constraintStart_toEndOf="@+id/EmailTextView"
+            app:layout_constraintTop_toBottomOf="@+id/ProfileDiscord" />
+
+        <TextView
+            android:id="@+id/genderTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16sp"
+            android:layout_marginTop="40sp"
+            android:drawableLeft="@drawable/baseline_female_24"
+            android:drawablePadding="5sp"
+            android:drawableTint="@color/black"
+            android:text="@string/gender"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/EmailTextView" />
+
+        <TextView
+            android:id="@+id/profileGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44sp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.594"
+            app:layout_constraintStart_toEndOf="@+id/genderTextView"
+            app:layout_constraintTop_toBottomOf="@+id/ProfileEmail" />
+
+        <TextView
+            android:id="@+id/continentTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16sp"
+            android:layout_marginTop="40sp"
+            android:drawableLeft="@drawable/baseline_location_on_24"
+            android:drawablePadding="5sp"
+            android:drawableTint="@color/black"
+            android:text="@string/continent"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/genderTextView" />
+
+        <TextView
+            android:id="@+id/profileContinent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45sp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.571"
+            app:layout_constraintStart_toEndOf="@+id/continentTextView"
+            app:layout_constraintTop_toBottomOf="@+id/profileGender" />
+
+        <TextView
+            android:id="@+id/fifaTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16sp"
+            android:layout_marginTop="40sp"
+            android:drawableLeft="@drawable/baseline_sports_soccer_24"
+            android:drawablePadding="5sp"
+            android:drawableTint="@color/black"
+            android:text="@string/fifa_ranking"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/continentTextView" />
+
+        <TextView
+            android:id="@+id/ProfileFifa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45sp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.544"
+            app:layout_constraintStart_toEndOf="@+id/fifaTextView"
+            app:layout_constraintTop_toBottomOf="@+id/profileContinent" />
+
+        <TextView
+            android:id="@+id/lolTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16sp"
+            android:layout_marginTop="40sp"
+            android:drawableLeft="@drawable/baseline_videogame_asset_24"
+            android:drawablePadding="5sp"
+            android:drawableTint="@color/black"
+            android:text="@string/lol_ranking"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fifaTextView" />
+
+        <TextView
+            android:id="@+id/ProfileLol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50sp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.54"
+            app:layout_constraintStart_toEndOf="@+id/lolTextView"
+            app:layout_constraintTop_toBottomOf="@+id/ProfileFifa" />
+
+        <TextView
+            android:id="@+id/pubgTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16sp"
+            android:layout_marginTop="40sp"
+            android:drawableLeft="@drawable/baseline_sports_esports_24"
+            android:drawablePadding="5sp"
+            android:drawableTint="@color/black"
+            android:text="@string/pubg_ranking"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lolTextView" />
+
+        <TextView
+            android:id="@+id/ProfilePubg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40sp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.527"
+            app:layout_constraintStart_toEndOf="@+id/pubgTextView"
+            app:layout_constraintTop_toBottomOf="@+id/ProfileLol" />
+
+        <Button
+            android:id="@+id/changeRankingBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40sp"
+            android:layout_marginBottom="20sp"
+            android:backgroundTint="@color/cardview_shadow_start_color"
+            android:text="@string/update_details"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.48"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ProfilePubg"
+            app:layout_constraintVertical_bias="0.503" />
+
+        <TextView
+            android:id="@+id/discordTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16sp"
+            android:layout_marginTop="40sp"
+            android:drawableLeft="@drawable/baseline_textsms_24"
+            android:drawablePadding="5sp"
+            android:drawableTint="@color/black"
+            android:text="@string/discord_username"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/FullNameTextView" />
+
+        <TextView
+            android:id="@+id/ProfileDiscord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45sp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.462"
+            app:layout_constraintStart_toEndOf="@+id/discordTextView"
+            app:layout_constraintTop_toBottomOf="@+id/ProfileUsername" />
+
+        <ImageView
+            android:id="@+id/usersProfPic"
+            android:layout_width="124sp"
+            android:layout_height="83sp"
+            android:layout_marginTop="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/ProfileHeader"
+            app:layout_constraintStart_toStartOf="@+id/ProfileHeader"
+            app:layout_constraintTop_toBottomOf="@+id/ProfileHeader"
+            tools:src="@tools:sample/avatars" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

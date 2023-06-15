@@ -1,0 +1,91 @@
+<resources>
+    <string name="app_name">TeammateFinderXO</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="profile">Profile</string>
+    <string name="full_name">Full name:</string>
+    <string name="email_address">Email Address:</string>
+    <string name="gender">Gender:</string>
+    <string name="continent">Continent:</string>
+    <string name="fifa_ranking">Fifa Ranking:</string>
+    <string name="lol_ranking">LOL Ranking:</string>
+    <string name="pubg_ranking">Pubg Ranking:</string>
+    <string name="search">Search</string>
+    <string name="game">Game:</string>
+    <string name="rank">Rank</string>
+    <string name="searchBtn">Search</string>
+    <string name="finished">Finished</string>
+    <string name="select_your_rank">Select your rank</string>
+    <string name="update_details">Update details</string>
+    <string name="your_details">Your Details</string>
+    <string name="discord_username">Discord Username:</string>
+    <string name="matches">Matches</string>
+    <string name="select_your_avatar">Select your avatar:</string>
+
+    <array name="Games">
+        <item>Fifa</item>
+        <item>League Of Legends</item>
+        <item>PUBG</item>
+    </array>
+
+    <array name="Gender">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </array>
+
+    <array name="Continent">
+        <item>Asia</item>
+        <item>Africa</item>
+        <item>North America</item>
+        <item>South America</item>
+        <item>Antarctica</item>
+        <item>Europe</item>
+        <item>Australia</item>
+    </array>
+
+    <array name="FifaRankings">
+        <item>Division10</item>
+        <item>Division9</item>
+        <item>Division8</item>
+        <item>Division7</item>
+        <item>Division6</item>
+        <item>Division5</item>
+        <item>Division4</item>
+        <item>Division3</item>
+        <item>Division2</item>
+        <item>Division1</item>
+        <item>Elite</item>
+    </array>
+
+    <array name="PUBGRankings">
+        <item>Bronze</item>
+        <item>Silver</item>
+        <item>Gold</item>
+        <item>Platinum</item>
+        <item>Diamond</item>
+        <item>Master</item>
+        <item>Grandmaster</item>
+    </array>
+
+    <array name="LOLRankings">
+        <item>Iron</item>
+        <item>Bronze</item>
+        <item>Silver</item>
+        <item>Gold</item>
+        <item>Platinum</item>
+        <item>Diamond</item>
+        <item>Master</item>
+        <item>Grandmaster</item>
+    </array>
+
+    <string-array name="Avatars_array">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+
+</resources>

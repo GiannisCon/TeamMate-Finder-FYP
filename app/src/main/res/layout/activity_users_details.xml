@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".UsersDetails">
+
+        <Spinner
+            android:id="@+id/avatarPicker"
+            android:layout_width="300sp"
+            android:layout_height="50sp"
+            android:layout_marginTop="30sp"
+            android:entries="@array/Avatars_array"
+            app:layout_constraintEnd_toEndOf="@+id/avatar6"
+            app:layout_constraintStart_toStartOf="@+id/avatar1"
+            app:layout_constraintTop_toBottomOf="@+id/avatar3"></Spinner>
+
+        <Spinner
+            android:id="@+id/searchGender"
+            android:layout_width="300sp"
+            android:layout_height="50sp"
+            android:layout_marginTop="40sp"
+            android:entries="@array/Gender"
+            app:layout_constraintEnd_toEndOf="@+id/searchGenderTextView"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/searchGenderTextView"
+            app:layout_constraintTop_toBottomOf="@+id/searchGenderTextView"></Spinner>
+
+        <Spinner
+            android:id="@+id/searchContinent"
+            android:layout_width="300sp"
+            android:layout_height="50sp"
+            android:layout_marginTop="40sp"
+            android:entries="@array/Continent"
+            app:layout_constraintEnd_toEndOf="@+id/searchContinentTextView"
+            app:layout_constraintStart_toStartOf="@+id/searchContinentTextView"
+            app:layout_constraintTop_toBottomOf="@+id/searchContinentTextView"></Spinner>
+
+        <Spinner
+            android:id="@+id/FifaRanking"
+            android:layout_width="300sp"
+            android:layout_height="50sp"
+            android:layout_marginTop="40sp"
+            android:entries="@array/FifaRankings"
+            app:layout_constraintEnd_toEndOf="@+id/searchGameTextView"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/searchGameTextView"
+            app:layout_constraintTop_toBottomOf="@+id/searchGameTextView"></Spinner>
+
+        <Spinner
+            android:id="@+id/PubgRanking"
+            android:layout_width="300sp"
+            android:layout_height="50sp"
+            android:layout_marginTop="40sp"
+            android:entries="@array/PUBGRankings"
+            app:layout_constraintEnd_toEndOf="@+id/Question4"
+            app:layout_constraintStart_toStartOf="@+id/Question4"
+            app:layout_constraintTop_toBottomOf="@+id/Question4"></Spinner>
+
+        <Spinner
+            android:id="@+id/LolRanking"
+            android:layout_width="300sp"
+            android:layout_height="50sp"
+            android:layout_marginTop="40sp"
+            android:entries="@array/LOLRankings"
+            app:layout_constraintEnd_toEndOf="@+id/Question5"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/Question5"
+            app:layout_constraintTop_toBottomOf="@+id/Question5"></Spinner>
+
+        <Button
+            android:id="@+id/insertGamesButton"
+            android:layout_width="170sp"
+            android:layout_height="52sp"
+            android:layout_marginTop="70sp"
+            android:layout_marginBottom="50sp"
+            android:backgroundTint="@color/cardview_shadow_start_color"
+            android:text="@string/finished"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/LolRanking"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="@+id/LolRanking"
+            app:layout_constraintTop_toBottomOf="@+id/LolRanking"
+            app:layout_constraintVertical_bias="1.0"></Button>
+
+        <TextView
+            android:id="@+id/usersRanksHeader"
+            android:layout_width="301sp"
+            android:layout_height="69sp"
+            android:layout_marginTop="50sp"
+            android:text="@string/your_details"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/searchGenderTextView"
+            android:layout_width="300sp"
+            android:layout_height="50sp"
+            android:layout_marginTop="60sp"
+            android:text="@string/gender"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/detailsDiscord"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="@+id/detailsDiscord"
+            app:layout_constraintTop_toBottomOf="@+id/detailsDiscord" />
+
+        <TextView
+            android:id="@+id/searchContinentTextView"
+            android:layout_width="300sp"
+            android:layout_height="50sp"
+            android:layout_marginTop="60sp"
+            android:text="@string/continent"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/searchGender"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="@+id/searchGender"
+            app:layout_constraintTop_toBottomOf="@+id/searchGender" />
+
+        <TextView
+            android:id="@+id/searchGameTextView"
+            android:layout_width="300sp"
+            android:layout_height="50sp"
+            android:layout_marginTop="60sp"
+            android:text="@string/fifa_ranking"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/searchContinent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="@+id/searchContinent"
+            app:layout_constraintTop_toBottomOf="@+id/searchContinent" />
+
+        <TextView
+            android:id="@+id/Question4"
+            android:layout_width="300sp"
+            android:layout_height="50sp"
+            android:layout_marginTop="60sp"
+            android:text="@string/pubg_ranking"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/FifaRanking"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="@+id/FifaRanking"
+            app:layout_constraintTop_toBottomOf="@+id/FifaRanking" />
+
+        <TextView
+            android:id="@+id/Question5"
+            android:layout_width="300sp"
+            android:layout_height="50sp"
+            android:layout_marginTop="60sp"
+            android:text="@string/lol_ranking"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/PubgRanking"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="@+id/PubgRanking"
+            app:layout_constraintTop_toBottomOf="@+id/PubgRanking" />
+
+        <EditText
+            android:id="@+id/detailsDiscord"
+            android:layout_width="300sp"
+            android:layout_height="63sp"
+            android:layout_marginTop="30sp"
+            android:autofillHints=""
+            android:backgroundTint="@color/black"
+            android:ems="10"
+            android:hint="@string/discord_username"
+            android:inputType="textPersonName"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            app:layout_constraintEnd_toEndOf="@+id/avatarPicker"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="@+id/avatarPicker"
+            app:layout_constraintTop_toBottomOf="@+id/avatarPicker" />
+
+        <ImageView
+            android:id="@+id/avatar1"
+            android:layout_width="55sp"
+            android:layout_height="48sp"
+            android:layout_marginStart="16sp"
+            android:layout_marginTop="25sp"
+            app:layout_constraintEnd_toStartOf="@+id/avatar2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/selectAvatarTextView"
+            app:srcCompat="@drawable/avatar1" />
+
+        <ImageView
+            android:id="@+id/avatar2"
+            android:layout_width="55sp"
+            android:layout_height="48sp"
+            android:layout_marginStart="9sp"
+            android:layout_marginTop="25sp"
+            app:layout_constraintEnd_toStartOf="@+id/avatar3"
+            app:layout_constraintStart_toEndOf="@+id/avatar1"
+            app:layout_constraintTop_toBottomOf="@+id/selectAvatarTextView"
+            app:srcCompat="@drawable/avatar2" />
+
+        <ImageView
+            android:id="@+id/avatar4"
+            android:layout_width="55sp"
+            android:layout_height="48sp"
+            android:layout_marginTop="25sp"
+            app:layout_constraintEnd_toStartOf="@+id/avatar5"
+            app:layout_constraintStart_toEndOf="@+id/avatar3"
+            app:layout_constraintTop_toBottomOf="@+id/selectAvatarTextView"
+            app:srcCompat="@drawable/avatar4" />
+
+        <ImageView
+            android:id="@+id/avatar3"
+            android:layout_width="55sp"
+            android:layout_height="48sp"
+            android:layout_marginStart="6sp"
+            android:layout_marginTop="25sp"
+            android:layout_marginEnd="3sp"
+            app:layout_constraintEnd_toStartOf="@+id/avatar4"
+            app:layout_constraintStart_toEndOf="@+id/avatar2"
+            app:layout_constraintTop_toBottomOf="@+id/selectAvatarTextView"
+            app:srcCompat="@drawable/avatar3" />
+
+        <ImageView
+            android:id="@+id/avatar5"
+            android:layout_width="55sp"
+            android:layout_height="48sp"
+            android:layout_marginTop="25sp"
+            app:layout_constraintEnd_toStartOf="@+id/avatar6"
+            app:layout_constraintStart_toEndOf="@+id/avatar4"
+            app:layout_constraintTop_toBottomOf="@+id/selectAvatarTextView"
+            app:srcCompat="@drawable/avatar5" />
+
+        <ImageView
+            android:id="@+id/avatar6"
+            android:layout_width="55sp"
+            android:layout_height="48sp"
+            android:layout_marginTop="25sp"
+            android:layout_marginEnd="26sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/avatar5"
+            app:layout_constraintTop_toBottomOf="@+id/selectAvatarTextView"
+            app:srcCompat="@drawable/avatar6" />
+
+        <TextView
+            android:id="@+id/selectAvatarTextView"
+            android:layout_width="300sp"
+            android:layout_height="50sp"
+            android:layout_marginTop="20sp"
+            android:text="@string/select_your_avatar"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/usersRanksHeader"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="@+id/usersRanksHeader"
+            app:layout_constraintTop_toBottomOf="@+id/usersRanksHeader" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
